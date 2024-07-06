@@ -1,0 +1,172 @@
+body {
+    font-family: Consolas, monospace;
+    font-size: 11pt;
+    background-image: linear-gradient(#FFF9DB,#faf4a3 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.myHeading {
+    text-align: center;
+    padding-left: 0px;
+}
+
+.navbar {
+    width: 100%;
+    font-size: 12pt;
+    color: black;
+}
+
+header {
+    background-color: #FFECB3;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+header::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    list-style: none;
+    display: inline-block;
+    padding-inline-start: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: transform 250ms ease-in-out;
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: scale(1.25);
+}
+
+nav a::before {
+    content: '';
+    transition: all ease-in-out 200ms;
+}
+
+footer {
+    background-color: #FFECB3;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 20%;
+}
+
+.copyright {
+    text-align: left;
+}
+
+.socials {
+    display: flex;
+    justify-content: start;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding-inline-start: 0;
+}
+
+footer li {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    margin: 20px;
+}
+.sLogo {
+    height: 23px;
+    width: 23px;
+    opacity: 1;
+    transition: 300ms;
+}
+
+.sLogo:hover {
+    opacity: 0.35;
+}
+.fLogo {
+    height: 14px;
+    width: 14px;
+    display: inline;
+}
+
+.nLogo {
+    height: 10px;
+    width: 10px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe a {
+    color: navy;
+}
+
+.projectsMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMe a {
+    color: hotpink;
+}
+
+.contactMe form {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 450px) {
+    body {
+        font-size: 16pt;
+    }
+}
+
+@media (max-width: 1050px) {
+    body{
+        font-size: 13pt;
+    }
+}
